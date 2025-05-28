@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kuis Tentang AI</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7f9;
+      padding: 20px;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #0078d4;
+    }
+    .soal {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin: 5px 0;
+    }
+    button#submit {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button#submit:hover {
+      background-color: #1e7e34;
+    }
+    #hasil {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .detail-jawaban {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Kuis Tentang AI yang Bertanggung Jawab</h1>
+
+<form id="kuisForm">
+
+  <!-- SOAL 1 -->
+  <div class="soal">
+    <p><strong>1. Apa kepanjangan dari AI?</strong></p>
+    <label><input type="radio" name="q1" value="a"> Artificial Intelligence</label>
+    <label><input type="radio" name="q1" value="b"> Automatic Internet</label>
+    <label><input type="radio" name="q1" value="c"> Actual Intelligence</label>
+    <label><input type="radio" name="q1" value="d"> Automated Ideas</label>
+  </div>
+
+  <!-- SOAL 2 -->
+  <div class="soal">
+    <p><strong>2. Apa itu GitHub Copilot?</strong></p>
+    <label><input type="radio" name="q2" value="a"> Robot pemain sepak bola</label>
+    <label><input type="radio" name="q2" value="b"> Alat bantu menulis kode</label>
+    <label><input type="radio" name="q2" value="c"> Mesin pencari web</label>
+    <label><input type="radio" name="q2" value="d"> Game online</label>
+  </div>
+
+  <!-- SOAL 3 -->
+  <div class="soal">
+    <p><strong>3. Apa arti "Responsible AI"?</strong></p>
+    <label><input type="radio" name="q3" value="a"> AI yang tidak punya tugas</label>
+    <label><input type="radio" name="q3" value="b"> AI yang cepat sekali</label>
+    <label><input type="radio" name="q3" value="c"> AI yang aman dan jujur</label>
+    <label><input type="radio" name="q3" value="d"> AI yang bisa nyanyi</label>
+  </div>
+
+  <!-- SOAL 4 -->
+  <div class="soal">
+    <p><strong>4. Apa risiko jika AI tidak dikontrol?</strong></p>
+    <label><input type="radio" name="q4" value="a"> Bisa bersikap tidak adil</label>
+    <label><input type="radio" name="q4" value="b"> Selalu benar</label>
+    <label><input type="radio" name="q4" value="c"> Tidak bisa belajar</label>
+    <label><input type="radio" name="q4" value="d"> Cepat rusak</label>
+  </div>
+
+  <!-- SOAL 5 -->
+  <div class="soal">
+    <p><strong>5. Apa yang harus dilakukan manusia saat menggunakan AI?</strong></p>
+    <label><input type="radio" name="q5" value="a"> Biarkan AI bekerja sendiri</label>
+    <label><input type="radio" name="q5" value="b"> Hapus semua data</label>
+    <label><input type="radio" name="q5" value="c"> Mengawasi kerja AI</label>
+    <label><input type="radio" name="q5" value="d"> Jangan pernah pakai AI</label>
+  </div>
+
+  <!-- SOAL 6 -->
+  <div class="soal">
+    <p><strong>6. Apa manfaat dari GitHub Copilot?</strong></p>
+    <label><input type="radio" name="q6" value="a"> Membuat game</label>
+    <label><input type="radio" name="q6" value="b"> Membantu menulis kode lebih cepat</label>
+    <label><input type="radio" name="q6" value="c"> Menyimpan foto</label>
+    <label><input type="radio" name="q6" value="d"> Memutar musik</label>
+  </div>
+
+  <!-- SOAL 7 -->
+  <div class="soal">
+    <p><strong>7. Kenapa kita harus hati-hati saat menggunakan AI?</strong></p>
+    <label><input type="radio" name="q7" value="a"> Agar tidak ketiduran</label>
+    <label><input type="radio" name="q7" value="b"> Karena AI bisa membuat kesalahan</label>
+    <label><input type="radio" name="q7" value="c"> Biar tidak bosen</label>
+    <label><input type="radio" name="q7" value="d"> Supaya cepat kaya</label>
+  </div>
+
+  <!-- SOAL 8 -->
+  <div class="soal">
+    <p><strong>8. Apa yang dimaksud dengan "AI bias"?</strong></p>
+    <label><input type="radio" name="q8" value="a"> AI suka makan roti</label>
+    <label><input type="radio" name="q8" value="b"> AI bersikap tidak adil</label>
+    <label><input type="radio" name="q8" value="c"> AI tidak bisa tidur</label>
+    <label><input type="radio" name="q8" value="d"> AI menyukai warna merah</label>
+  </div>
+
+  <!-- SOAL 9 -->
+  <div class="soal">
+    <p><strong>9. Siapa yang bertanggung jawab atas hasil kerja AI?</strong></p>
+    <label><input type="radio" name="q9" value="a"> Hanya komputer</label>
+    <label><input type="radio" name="q9" value="b"> Manusia yang menggunakannya</label>
+    <label><input type="radio" name="q9" value="c"> Mesin pencari</label>
+    <label><input type="radio" name="q9" value="d"> Semua orang di dunia</label>
+  </div>
+
+  <!-- SOAL 10 -->
+  <div class="soal">
+    <p><strong>10. Apa yang harus dilakukan jika AI memberikan informasi yang salah?</strong></p>
+    <label><input type="radio" name="q10" value="a"> Langsung percaya</label>
+    <label><input type="radio" name="q10" value="b"> Periksa lagi dengan sumber lain</label>
+    <label><input type="radio" name="q10" value="c"> Hapus internet</label>
+    <label><input type="radio" name="q10" value="d"> Jangan pernah buka laptop</label>
+  </div>
+
+  <!-- SOAL 11 -->
+  <div class="soal">
+    <p><strong>11. Apa itu transparansi dalam AI?</strong></p>
+    <label><input type="radio" name="q11" value="a"> AI bisa melihat tembus dinding</label>
+    <label><input type="radio" name="q11" value="b"> Bisa menjelaskan cara AI bekerja</label>
+    <label><input type="radio" name="q11" value="c"> AI selalu memakai kaca</label>
+    <label><input type="radio" name="q11" value="d"> AI tidak perlu dikontrol</label>
+  </div>
+
+  <!-- SOAL 12 -->
+  <div class="soal">
+    <p><strong>12. Apa contoh AI yang sering digunakan sehari-hari?</strong></p>
+    <label><input type="radio" name="q12" value="a"> Speaker Bluetooth</label>
+    <label><input type="radio" name="q12" value="b"> Asisten virtual seperti Alexa atau Google Assistant</label>
+    <label><input type="radio" name="q12" value="c"> Jam dinding</label>
+    <label><input type="radio" name="q12" value="d"> Radio tape</label>
+  </div>
+
+  <!-- SOAL 13 -->
+  <div class="soal">
+    <p><strong>13. Apa yang dimaksud dengan privasi dalam AI?</strong></p>
+    <label><input type="radio" name="q13" value="a"> Rahasia tidak boleh dibongkar</label>
+    <label><input type="radio" name="q13" value="b"> Data pribadi aman dari AI</label>
+    <label><input type="radio" name="q13" value="c"> AI bisa tahu semua rahasia</label>
+    <label><input type="radio" name="q13" value="d"> AI suka menyendiri</label>
+  </div>
+
+  <!-- SOAL 14 -->
+  <div class="soal">
+    <p><strong>14. Apa yang harus kamu lakukan sebelum percaya pada jawaban AI?</strong></p>
+    <label><input type="radio" name="q14" value="a"> Langsung share ke medsos</label>
+    <label><input type="radio" name="q14" value="b"> Cek ulang dari sumber tepercaya</label>
+    <label><input type="radio" name="q14" value="c"> Tanya ke robot</label>
+    <label><input type="radio" name="q14" value="d"> Abaikan saja</label>
+  </div>
+
+  <!-- SOAL 15 -->
+  <div class="soal">
+    <p><strong>15. Apa yang bisa dilakukan untuk mengurangi risiko AI?</strong></p>
+    <label><input type="radio" name="q15" value="a"> Gunakan AI tanpa belajar</label>
+    <label><input type="radio" name="q15" value="b"> Pelajari cara kerjanya dan gunakan dengan bijak</label>
+    <label><input type="radio" name="q15" value="c"> Buang semua gadget</label>
+    <label><input type="radio" name="q15" value="d"> Main game seharian</label>
+  </div>
+
+  <!-- SOAL 16 -->
+  <div class="soal">
+    <p><strong>16. Apa tujuan utama Responsible AI?</strong></p>
+    <label><input type="radio" name="q16" value="a"> Bikin AI jadi juara</label>
+    <label><input type="radio" name="q16" value="b"> Gunakan AI secara adil, aman, dan dapat dipercaya</label>
+    <label><input type="radio" name="q16" value="c"> AI tidak punya tujuan</label>
+    <label><input type="radio" name="q16" value="d"> AI hanya main-main</label>
+  </div>
+
+  <!-- SOAL 17 -->
+  <div class="soal">
+    <p><strong>17. Apa yang bisa menjadi masalah jika AI digunakan untuk seleksi pekerjaan?</strong></p>
+    <label><input type="radio" name="q17" value="a"> Prosesnya cepat</label>
+    <label><input type="radio" name="q17" value="b"> AI bisa bersikap tidak adil tanpa disadari</label>
+    <label><input type="radio" name="q17" value="c"> Orang senang</label>
+    <label><input type="radio" name="q17" value="d"> Semua pelamar diterima</label>
+  </div>
+
+  <!-- SOAL 18 -->
+  <div class="soal">
+    <p><strong>18. Apa yang dimaksud dengan akuntabilitas dalam AI?</strong></p>
+    <label><input type="radio" name="q18" value="a"> AI harus bertanggung jawab atas kesalahan</label>
+    <label><input type="radio" name="q18" value="b"> Orang yang pakai AI harus bertanggung jawab</label>
+    <label><input type="radio" name="q18" value="c"> AI tidak pernah salah</label>
+    <label><input type="radio" name="q18" value="d"> Semua orang ikut salah</label>
+  </div>
+
+  <!-- SOAL 19 -->
+  <div class="soal">
+    <p><strong>19. Apa yang bisa dilakukan jika AI menyalin kode dari orang lain?</strong></p>
+    <label><input type="radio" name="q19" value="a"> Langsung pakai saja</label>
+    <label><input type="radio" name="q19" value="b"> Periksa lisensi dan izin</label>
+    <label><input type="radio" name="q19" value="c"> Upload ke YouTube</label>
+    <label><input type="radio" name="q19" value="d"> Bagikan ke semua teman</label>
+  </div>
+
+  <!-- SOAL 20 -->
+  <div class="soal">
+    <p><strong>20. Apa pesan utama dari Responsible AI?</strong></p>
+    <label><input type="radio" name="q20" value="a"> AI harus digunakan dengan bijak dan bertanggung jawab</label>
+    <label><input type="radio" name="q20" value="b"> AI harus dibiarkan bebas</label>
+    <label><input type="radio" name="q20" value="c"> AI harus dimatikan</label>
+    <label><input type="radio" name="q20" value="d"> AI tidak penting</label>
+  </div>
+
+</form>
+
+<button id="submit">Kirim Jawaban</button>
+
+<div id="hasil"></div>
+
+<script>
+  const form = document.getElementById("kuisForm");
+  const submitBtn = document.getElementById("submit");
+  const hasilDiv = document.getElementById("hasil");
+
+  const jawabanBenar = {
+    q1: "a", q2: "b", q3: "c", q4: "a", q5: "c",
+    q6: "b", q7: "b", q8: "b", q9: "b", q10: "b",
+    q11: "b", q12: "b", q13: "b", q14: "b", q15: "b",
+    q16: "b", q17: "b", q18: "b", q19: "b", q20: "a"
+  };
+
+  submitBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    let skor = 0;
+    let hasilHTML = "<h2>Hasil Kuis</h2>";
+
+    for (let i = 1; i <= 20; i++) {
+      const namaSoal = "q" + i;
+      const jawabanUser = form[namaSoal].value;
+      const jawabanTrue = jawabanBenar[namaSoal];
+
+      let benar = jawabanUser === jawabanTrue;
+
+      if (benar) skor++;
+
+      hasilHTML += `
+        <div class="detail-jawaban">
+          <strong>Soal ${i}:</strong><br>
+          Jawaban kamu: ${jawabanUser || 'Tidak diisi'}<br>
+          Jawaban benar: ${jawabanTrue}<br>
+          Status: <span style="color:${benar ? 'green' : 'red'}">${benar ? '✔️ Benar' : '❌ Salah'}</span>
+        </div>
+      `;
+    }
+
+    hasilHTML += `<h3>Kamu menjawab benar ${skor} dari 20 soal.</h3>`;
+    hasilDiv.innerHTML = hasilHTML;
+  });
+</script>
+
+</body>
+</html>
